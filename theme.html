@@ -195,7 +195,7 @@
 
             {% if post.tags %}
             <ul class="post-tags">
-            {% for tag in post.tags %}
+            {% for tag in post.tags if not 'blog-static' == tag %}
               <li><a href="/tag/{{ tag }}">{{ tag|format_tag(link=False, humanize=True) }}</a></li>
             {% endfor %}
             </ul>
