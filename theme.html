@@ -135,11 +135,11 @@
           {% endif %}
 
           {% if posts %}
-          {% for post in posts}
+          {% for post in posts %}
 
-          {# if post.title == 'about me' #}
+          {% if post.title == 'about me' %}
             found
-          {# endif #}
+          {% endif %}
 
           <div class="post span6">
             <div class="row">
