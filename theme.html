@@ -66,45 +66,38 @@
           <h1>{{ site.name }}</h1>
           <nav>
             <a href="about-me">That's me</a>
+            <a href="gear">Gear I use</a>
+            <a href="nutrition">What I eat</a>
           </nav>
-          <ul class="social">
+          <nav class="social">
             {% if site.twitter %}
-            <li>
-              <a href="{{ site.twitter }}" title="Twitter" target="_blank">
-                <i class="icon-twitter"></i> Twitter
-              </a>
-            </li>
+            <a href="{{ site.twitter }}" title="Twitter" target="_blank">
+              <i class="icon-twitter"></i>
+            </a>
             {% endif %}
 
             {% if site.facebook %}
-            <li>
-              <a href="{{ site.facebook }}" title="Facebook" target="_blank">
-                <i class="icon-facebook-sign"></i> Facebook
-              </a>
-            </li>
+            <a href="{{ site.facebook }}" title="Facebook" target="_blank">
+              <i class="icon-facebook-sign"></i>
+            </a>
             {% endif %}
 
             {% if site.googleplus %}
-            <li>
-              <a href="{{ site.googleplus }}?rel=author" title="Google+" target="_blank">
-                <i class="icon-google-plus"></i> Google+
-              </a>
-            </li>
+            <a href="{{ site.googleplus }}?rel=author" title="Google+" target="_blank">
+              <i class="icon-google-plus"></i>
+            </a>
             {% endif %}
 
             {% if site.linkedin %}
-            <li>
-              <a href="{{ site.linkedin }}" title="LinkedIn" target="_blank">
-                <i class="icon-linkedin"></i> LinkedIn
-              </a>
-            </li>
+            <a href="{{ site.linkedin }}" title="LinkedIn" target="_blank">
+              <i class="icon-linkedin"></i>
+            </a>
             {% endif %}
-            <li>
-              <a href="{{ site.atom_url }}" title="RSS" target="_blank">
-                <i class="icon-rss"></i> RSS
-              </a>
+            <a href="{{ site.atom_url }}" title="RSS" target="_blank">
+              <i class="icon-rss"></i>
+            </a>
             </li>
-          </ul>
+          </nav>>
         </div>
         <!--a class="logo" href="/">
           <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />
