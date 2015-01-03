@@ -65,7 +65,7 @@
         <div class="title">
           <h1>{{ site.name }}</h1>
           <nav>
-            <a href="tag/about-me">That's me</a>
+            <a href="about-me">That's me</a>
           </nav>
           <ul class="social">
             {% if site.twitter %}
@@ -135,7 +135,8 @@
           {% endif %}
 
           {% if posts %}
-          {% for post in posts %}
+          {% for post in posts if not post.title == 'about me' %}
+          {% if is_tag    }
           <div class="post span6">
             <div class="row">
               <div class="span6">
